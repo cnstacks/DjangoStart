@@ -18,5 +18,6 @@ from django.contrib import admin
 from message import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^form/$', views.getform),
+    url(r'^form/$', views.getform,name='go_form'),
+    url(r'^formtest', admin.site.urls),
 ]
